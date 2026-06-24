@@ -3,472 +3,93 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Dzekoelektro | Električar Novi Pazar 24/7</title>
-
-<!-- redeploy: 2026-06-24T16:40:00Z -->
-
-<meta name="description" content="Dzekoelektro Novi Pazar - Elektro instalacije, video nadzor, alarmni sistemi, klima uređaji, interfoni, automatika za kapije i LED rasveta.">
-
-<meta name="keywords" content="električar novi pazar, elektro instalacije novi pazar, video nadzor novi pazar, alarmni sistemi novi pazar, klima uređaji novi pazar">
-<meta name="theme-color" content="#0f172a">
-<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-
 <style>
-.lightning {
-  font-size: 60px;
-  margin: 0 15px;
-  display: inline-block;
-  /* Ovo će dodati samo blagi žuti sjaj oko emotikona */
-  filter: drop-shadow(0 0 5px #ffd700); 
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
- /* 1. Postavi tamnu pozadinu na celu stranicu */
+/* Osnovna tamna tema */
 body {
   background-color: #0f172a !important; 
   color: white !important;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
-/* 2. Učini kartice providnim ili tamnim da se tekst vidi */
-.container, .service-card {
-  background-color: transparent !important; 
-  color: white !important;
-}
+.container { width: 90%; max-width: 800px; margin: 0 auto; text-align: center; padding: 20px; }
 
-/* 3. Ako su ovo one bele kutije, učini ih tamnijim */
-.service-box {
-  background-color: #1e293b !important;
-  color: white !important;
-}
+header { background: linear-gradient(135deg, #0f172a, #2563eb); color: white; padding: 60px 20px; text-align: center; }
 
+.btn { display: inline-block; padding: 15px 25px; background: white; color: #2563eb; text-decoration: none; font-weight: bold; border-radius: 8px; margin: 10px; }
 
-.container {
-  width: 90%;          /* Zauzima 90% širine ekrana */
-  max-width: 600px;    /* Ne dozvoljava da bude šire od 600px */
-  margin: 0 auto;      /* Ovo ga zakucava u centar */
-  text-align: center;  /* Ovo centrira sav tekst unutra */
-  padding: 20px;
-}
+section { padding: 60px 0; }
 
-header{
-background:linear-gradient(135deg,#0f172a,#2563eb);
-color:white;
-padding:100px 20px;
-text-align:center;
-}
+/* Tamna sekcija (prethodno svetla) */
+.dark { background-color: #0f172a !important; }
 
-}header h1 {
-  font-size: 60px;
-  margin-bottom: 15px;
-  /* Ovo ispod su linije koje dodajemo da munje stoje u redu */
-  display: flex;             
-  align-items: center;       
-  justify-content: center;   
-  gap: 15px;
-}
+.section-title { text-align: center; font-size: 36px; margin-bottom: 40px; color: white; }
 
-header p{
-font-size:20px;
-margin-bottom:10px;
-}
-
-.btn{
-display:inline-block;
-padding:15px 25px;
-background:white;
-color:#2563eb;
-text-decoration:none;
-font-weight:bold;
-border-radius:8px;
-margin:10px;
-}
-
-section{
-padding:80px 0;
-}
-
-.section-title{
-text-align:center;
-font-size:36px;
-margin-bottom:40px;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
 
 .card {
   background: #1e293b !important;
   padding: 25px;
   border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
   color: white !important;
 }
 
+.card h3 { margin-bottom: 10px; color: #60a5fa; }
 
-.card h3{
-margin-bottom:10px;
-color:#60a5fa
-}
+footer { background: #000; color: white; text-align: center; padding: 25px; }
 
-.dark{
-background:#f1f5f9;
-}
+/* Bedževi */
+.badges { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.badge { background: rgba(255, 255, 255, 0.1); padding: 10px 15px; border-radius: 30px; font-size: 14px; border: 1px solid #334155; }
 
-.contact{
-background:#0f172a;
-color:white;
-text-align:center;
-}
-
-footer{
-background:black;
-color:white;
-text-align:center;
-padding:25px;
-}
-
-.badges{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:10px;
-margin-top:20px;
-}
-
-.badge{
-background:rgba(255,255,255,0.2);
-padding:10px 15px;
-border-radius:30px;
-}
-
-.work-img{
-width:100%;
-height:180px;
-object-fit:cover;
-border-radius:8px;
-margin-top:10px;
-}
-
-@media (max-width:600px){
-header h1{font-size:36px}
-header{padding:60px 20px}
-}
-.logo-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.main-logo {
-  max-width: 200px; /* Malo smo povećali veličinu */
-  width: 100%;
-  height: auto;
-  border-radius: 15px; /* Ovo će zaobliti ivice 'kocke' da ne bode oči */
-}
-.badges {
-  display: flex;
-  flex-wrap: wrap; /* Omogućava prelazak u novi red ako je ekran uzak */
-  justify-content: center;
-  gap: 10px; /* Razmak između stavki */
-  padding: 20px;
-}
-
-.badge {
-  background-color: #f0f0f0; /* Svetla pozadina */
-  padding: 10px 15px;
-  border-radius: 20px; /* Zaobljeni uglovi */
-  font-size: 14px;
-  color: #333;
-}
-
-
+.work-img { width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-top: 10px; }
+.main-logo { max-width: 200px; width: 100%; height: auto; border-radius: 15px; }
 </style>
 </head>
 
-<body class="main-body">⁠
-
+<body>
 
 <header>
   <div class="container">
-  <div class="logo-container">
-    <img src="IMG_2709.jpeg" alt="Dzekoelektro Logo" class="main-logo">
+    <div class="logo-container"><img src="IMG_2709.jpeg" alt="Dzekoelektro Logo" class="main-logo"></div>
+    <p>Električar Novi Pazar • Dostupni 24/7</p>
+    <div class="badges">
+      <span class="badge">Elektro instalacije</span>
+      <span class="badge">Video nadzor</span>
+      <span class="badge">Alarmni sistemi</span>
+      <span class="badge">Klime</span>
+      <span class="badge">Interfoni</span>
+    </div>
+    <br>
+    <a href="tel:+381638709891" class="btn">📞 Pozovi odmah</a>
   </div>
-  <p>Električar Novi Pazar • Dostupni 24/7</p>
-  <p>Profesionalna elektro rešenja za kuće, stanove i poslovne prostore.</p>
-</div>
-
-
-
-<div class="badges">
-
-<span class="badge">Elektro instalacije</span>
-<span class="badge">Video nadzor</span>
-<span class="badge">Alarmni sistemi</span>
-<span class="badge">Klime</span>
-<span class="badge">Interfoni</span>
-
-</div>
-
-<br>
-  
-<div class="dugmad-kontejner">
-  <a href="tel:+381638709891" class="btn">📞 Pozovi odmah</a>
-  <a href="mailto:dzejlan699@gmail.com" class="btn">✉️ Pošalji email</a>
-</div>
-
-</div>
-
+</header>
 
 <section>
-
-<div class="container">
-
-<h2 class="section-title">O nama</h2>
-
-<p style="text-align:center;font-size:18px;max-width:900px;margin:auto;">
-
-Potreban vam je profesionalni majstor? Pozovite Dzekoelektro.
-
-Pružamo kvalitetne elektro usluge u Novom Pazaru i okolini.
-Radimo hitne intervencije, nove instalacije, video nadzor,
-alarmne sisteme, klimatizaciju i automatiku za kapije.
-
-</p>
-
-</div>
-
-</section>
-<section class="dark">
-
-<div class="container">
-
-<h2 class="section-title">Naše usluge</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Elektro instalacije</h3>
-<p>
-Kompletna izrada novih instalacija i rekonstrukcija postojećih sistema
-u kućama, stanovima i poslovnim objektima.
-</p>
-</div>
-
-<div class="card">
-<h3>Video nadzor</h3>
-<p>
-Ugradnja kamera za kuće, lokale, hale i poslovne objekte sa
-mogućnošću praćenja preko telefona.
-</p>
-</div>
-
-<div class="card">
-<h3>Alarmni sistemi</h3>
-<p>
-Projektovanje i montaža alarmnih sistema za zaštitu imovine.
-</p>
-</div>
-
-<div class="card">
-<h3>Klima uređaji</h3>
-<p>
-Prodaja, montaža i puštanje u rad klima uređaja svih vrsta.
-</p>
-</div>
-
-<div class="card">
-<h3>Motori za kapije</h3>
-<p>
-Automatika za klizne i krilne kapije sa daljinskim upravljanjem.
-</p>
-</div>
-
-<div class="card">
-<h3>Interfoni</h3>
-<p>
-Montaža audio i video interfona za stambene i poslovne objekte.
-</p>
-</div>
-
-<div class="card">
-<h3>LED rasveta</h3>
-<p>
-Unutrašnja i spoljašnja LED rasveta za domove, lokale i firme.
-</p>
-</div>
-
-<div class="card">
-<h3>Hitne intervencije 24/7</h3>
-<p>
-Brz izlazak na teren u slučaju kvara ili nestanka napajanja.
-</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="container">
-
-<h2 class="section-title">Zašto izabrati Dzekoelektro?</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Dostupni 24/7</h3>
-<p>
-Radimo svakog dana i dostupni smo za hitne intervencije.
-</p>
-</div>
-
-<div class="card">
-<h3>Brz dolazak</h3>
-<p>
-Trudimo se da na teren izađemo u najkraćem mogućem roku.
-</p>
-</div>
-
-<div class="card">
-<h3>Kvalitetna oprema</h3>
-<p>
-Koristimo proverenu i kvalitetnu opremu i materijale.
-</p>
-</div>
-
-<div class="card">
-<h3>Profesionalna usluga</h3>
-<p>
-Svaki posao obavljamo odgovorno, precizno i po dogovoru.
-</p>
-</div>
-
-</div>
-
-</div>
-
+  <div class="container">
+    <h2 class="section-title">O nama</h2>
+    <p>Pružamo kvalitetne elektro usluge u Novom Pazaru i okolini. Radimo hitne intervencije, nove instalacije, video nadzor, alarmne sisteme i klimatizaciju.</p>
+  </div>
 </section>
 
 <section class="dark">
-
-<div class="container">
-
-<h2 class="section-title">Šta radimo u Novom Pazaru?</h2>
-
-<p style="max-width:1000px;margin:auto;text-align:center;font-size:18px;">
-
-Dzekoelektro pruža kompletne elektro usluge u Novom Pazaru:
-elektro instalacije, video nadzor, alarmni sistemi,
-ugradnja interfona, montaža klima uređaja,
-automatika za kapije, LED rasveta i hitne intervencije.
-
-Ako tražite električara u Novom Pazaru koji je dostupan 24 sata dnevno,
-kontaktirajte nas i zakažite izlazak na teren.
-
-</p>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="container">
-
-<h2 class="section-title">Naši radovi</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Elektro instalacije</h3>
-<p>Ovde kasnije ubaci fotografije svojih radova.</p>
-<img src="images/IMG_2616.jpg" alt="Rad 1" class="work-img" loading="lazy" decoding="async">
-</div>
-
-<div class="card">
-<h3>Video nadzor</h3>
-<p>Dodaj slike kamera i završenih projekata.</p>
-<img src="images/IMG_9687.jpeg" alt="Rad 2" class="work-img" loading="lazy" decoding="async">
-</div>
-
-<div class="card">
-<h3>LED rasveta</h3>
-
-<img src="images/23DAFA7C-DAFC-4AB6-AD2F-04FD1F49B121.jpeg" alt="Rad 3" class="work-img" loading="lazy" decoding="async">
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="contact">
-
-<div class="container">
-
-<h2 class="section-title">Kontakt</h2>
-
-<p style="font-size:20px;margin-bottom:10px;"><strong>DZEKOELEKTRO</strong></p>
-
-<p>📞 Telefon: <a href="tel:+381638709891" style="color:white;">063 870 9891</a></p>
-
-<p>✉ Email: <a href="mailto:dzejlan699@gmail.com" style="color:white;">dzejlan699@gmail.com</a></p>
-
-<p>📍 Lokacija: Novi Pazar</p>
-
-<p>🕒 Radno vreme: 00-24 (24/7 hitne intervencije)</p>
-
-<br>
-
-<div style="text-align:center;margin-top:12px;">
-  <a href="tel:+381638709891" class="btn">📞 Pozovi odmah</a>
-  <a href="mailto:dzejlan699@gmail.com" class="btn">✉️ Pošalji poruku</a>
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="container">
-
-<h2 class="section-title">Gde radimo?</h2>
-
-<p style="text-align:center;font-size:18px;max-width:900px;margin:auto;">
-
-Radimo u Novom Pazaru i okolini. Dolazak na teren za hitne intervencije,
-kao i zakazani radovi za kuće, stanove, lokale i firme.
-
-</p>
-
-</div>
-
+  <div class="container">
+    <h2 class="section-title">Naše usluge</h2>
+    <div class="cards">
+      <div class="card"><h3>Elektro instalacije</h3><p>Kompletna izrada novih instalacija i rekonstrukcija.</p></div>
+      <div class="card"><h3>Video nadzor</h3><p>Ugradnja kamera sa praćenjem preko telefona.</p></div>
+      <div class="card"><h3>Alarmni sistemi</h3><p>Projektovanje i montaža za zaštitu imovine.</p></div>
+      <div class="card"><h3>Klima uređaji</h3><p>Prodaja, montaža i servis klima uređaja.</p></div>
+    </div>
+  </div>
 </section>
 
 <footer>
-
-<p>© 2026 Dzekoelektro | Električar Novi Pazar. Sva prava zadržana.</p>
-
+  <p>© 2026 Dzekoelektro | Električar Novi Pazar. Sva prava zadržana.</p>
 </footer>
 
 </body>
