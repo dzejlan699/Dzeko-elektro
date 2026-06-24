@@ -35,12 +35,24 @@ padding:0;
 box-sizing:border-box;
 }
 
- ⁠.main-body {
-font-family:Arial,Helvetica,sans-serif;
-line-height:1.6;
-color: white;
-background: #0f172a;
+ /* 1. Postavi tamnu pozadinu na celu stranicu */
+body {
+  background-color: #0f172a !important; 
+  color: white !important;
 }
+
+/* 2. Učini kartice providnim ili tamnim da se tekst vidi */
+.container, .service-card {
+  background-color: transparent !important; 
+  color: white !important;
+}
+
+/* 3. Ako su ovo one bele kutije, učini ih tamnijim */
+.service-box {
+  background-color: #1e293b !important;
+  color: white !important;
+}
+
 
 .container {
   width: 90%;          /* Zauzima 90% širine ekrana */
