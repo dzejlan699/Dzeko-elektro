@@ -48,17 +48,31 @@ font-size:20px;
 margin-bottom:10px;
 }
 
-/* Blue link style buttons (like original clean design) */
+/* Prominent buttons: white pill with blue text, matching original look */
 .btn{
-display:block;
-padding:18px 0;
-background:transparent;
+display:inline-block;
+padding:14px 28px;
+background:#ffffff;
 color:#2563eb;
 text-decoration:none;
-font-weight:700;
-border-radius:0;
-margin:28px 0;
-font-size:20px;
+font-weight:800;
+border-radius:10px;
+box-shadow:0 8px 24px rgba(37,99,235,0.08);
+margin:16px 10px;
+font-size:18px;
+}
+
+/* Keep accessible focus state */
+.btn:focus{
+outline:3px solid rgba(37,99,235,0.12);
+outline-offset:3px;
+}
+
+/* Slightly larger on mobile for tap targets */
+@media (max-width:600px){
+.btn{display:block;width:80%;margin:18px auto;font-size:20px;padding:16px 0}
+header h1{font-size:36px}
+header{padding:60px 20px}
 }
 
 section{
@@ -389,3 +403,4 @@ kao i zakazani radovi za kuće, stanove, lokale i firme.
 
 </body>
 </html>
+
