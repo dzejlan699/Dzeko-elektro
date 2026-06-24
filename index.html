@@ -17,13 +17,14 @@
 body{font-family:Arial,Helvetica,sans-serif;line-height:1.6;color:#222;background:#fff}
 .container{width:90%;max-width:1200px;margin:auto}
 :root{--safe-top:env(safe-area-inset-top)}
-header{background:linear-gradient(135deg,#0f172a,#2563eb);color:white;padding:calc(24px + var(--safe-top)) 20px 48px;text-align:center}
-header h1{font-size:clamp(28px,8vw,56px);line-height:1.02;margin:0 auto 8px;max-width:95%;word-break:break-word;letter-spacing:0.5px}
+header{background:linear-gradient(135deg,#0f172a,#2563eb);color:white;padding:calc(14px + var(--safe-top)) 20px 36px;text-align:center}
+header h1{font-size:clamp(28px,9vw,64px);line-height:1.02;margin:0 auto 8px;max-width:95%;word-break:break-word;letter-spacing:0.5px}
 header p{font-size:20px;margin-bottom:10px}
-/* Buttons: reduced white area, less padding and softer shadow */
-.btn{display:inline-block;padding:10px 18px;background:rgba(255,255,255,0.9);color:#2563eb;text-decoration:none;font-weight:800;border-radius:8px;box-shadow:0 6px 18px rgba(37,99,235,0.06);margin:10px 8px;font-size:17px;text-align:center}
-.btn:focus{outline:3px solid rgba(37,99,235,0.10);outline-offset:3px}
-@media (max-width:420px){.btn{display:inline-block;width:auto;font-size:18px;padding:12px 20px}header h1{font-size:36px}header{padding:calc(14px + var(--safe-top)) 16px 36px}}
+/* Buttons: transparent with subtle blue border to reduce white area */
+.btn{display:inline-block;padding:12px 18px;background:transparent;color:#fff;text-decoration:none;font-weight:800;border-radius:8px;border:2px solid rgba(255,255,255,0.18);margin:8px;font-size:18px;text-align:center}
+.btn:hover{background:rgba(255,255,255,0.06)}
+.btn:focus{outline:3px solid rgba(255,255,255,0.12);outline-offset:3px}
+@media (max-width:420px){.btn{display:inline-block;width:auto;font-size:18px;padding:12px 20px}header h1{font-size:40px}header{padding:calc(10px + var(--safe-top)) 16px 28px}}
 
 section{padding:80px 0}
 .section-title{text-align:center;font-size:36px;margin-bottom:40px}
