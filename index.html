@@ -15,23 +15,12 @@
 <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 
 <style>
-/* Ovo zameni sa onim starim delom u tvom CSS-u */
-
 .lightning {
   font-size: 60px;
-  display: inline-block;
   margin: 0 15px;
-  /* Animacija je sada brža i dinamičnija */
-  animation: lightning-strike 0.5s infinite alternate;
-  /* Sjaj koji izgleda kao prava struja */
-  filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #ffd700);
-}
-
-@keyframes lightning-strike {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  25% { opacity: 0.7; transform: scale(1.05) skew(-5deg); }
-  50% { opacity: 1; transform: scale(0.95) skew(5deg); }
-  75% { opacity: 0.8; transform: scale(1.02); }
+  display: inline-block;
+  /* Ovo će dodati samo blagi žuti sjaj oko emotikona */
+  filter: drop-shadow(0 0 5px #ffd700); 
 }
 
 * {
