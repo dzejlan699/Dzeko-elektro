@@ -161,10 +161,27 @@ header{padding:60px 20px}
 }
 
 .main-logo {
-  max-width: 150px;
+  max-width: 200px; /* Malo smo povećali veličinu */
   width: 100%;
   height: auto;
+  border-radius: 15px; /* Ovo će zaobliti ivice 'kocke' da ne bode oči */
 }
+.badges {
+  display: flex;
+  flex-wrap: wrap; /* Omogućava prelazak u novi red ako je ekran uzak */
+  justify-content: center;
+  gap: 10px; /* Razmak između stavki */
+  padding: 20px;
+}
+
+.badge {
+  background-color: #f0f0f0; /* Svetla pozadina */
+  padding: 10px 15px;
+  border-radius: 20px; /* Zaobljeni uglovi */
+  font-size: 14px;
+  color: #333;
+}
+
 
 </style>
 </head>
@@ -180,7 +197,6 @@ header{padding:60px 20px}
   <p>Profesionalna elektro rešenja za kuće, stanove i poslovne prostore.</p>
 </div>
 
-</header>
 
 
 <div class="badges">
@@ -202,7 +218,6 @@ header{padding:60px 20px}
 
 </div>
 
-</header>
 
 <section>
 
