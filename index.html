@@ -251,16 +251,19 @@ kontaktirajte nas i zakažite izlazak na teren.
 <h2 class="section-title">Naši radovi</h2>
 <div class="cards">
 
-  <div class="card">
+    <div class="card">
     <h3>Elektro instalacije</h3>
-    <img src="images/elektro.png.PNG" class="work-img">
-    <img src="images/elektro2.JPG" class="work-img">
-    <img src="images/elektro3.PNG" class="work-img">
-    <img src="images/elektro4.JPG" class="work-img">
-    <img src="images/elektro5.JPG" class="work-img">
-    <img src="images/elektro6.JPEG" class="work-img">
-    <img src="images/elektro7.JPG" class="work-img">
-  </div>
+    
+    <a href="images/elektro.png.PNG" class="glightbox" data-gallery="elektro">
+      <img src="images/elektro.png.PNG" class="work-img">
+    </a>
+
+    <a href="images/elektro2.JPG" class="glightbox" data-gallery="elektro">
+      <img src="images/elektro2.JPG" class="work-img">
+    </a>
+    
+    </div>
+
 
   <div class="card">
     <h3>Video nadzor</h3>
@@ -338,6 +341,14 @@ kao i zakazani radovi za kuće, stanove, lokale i firme.
 <p>© 2026 Dzekoelektro | Električar Novi Pazar. Sva prava zadržana.</p>
 
 </footer>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"></script>
+
+<script>
+  const lightbox = GLightbox({
+    selector: '.glightbox'
+  });
+</script>
 
 </body>
 </html>
