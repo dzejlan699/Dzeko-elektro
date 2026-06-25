@@ -17,11 +17,26 @@
 </head>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { background-color: #0f172a !important; color: white !important; font-family: Arial, sans-serif; overflow-x: hidden; }
-.text-logo { font-size: 30px; font-weight: 800; text-transform: uppercase; text-align: center; margin: 20px 0; color: white; word-wrap: break-word; }
-.yellow-text { color: #fbbf24; }
-.container { width: 90%; max-width: 900px; margin: 0 auto; text-align: center; }
+body { background-color: #0f172a !important; color: white !important; font-family: Arial, sans-serif; overflow-x: hidden; line-height: 1.6; }
+
+/* Sređivanje naslova */
+.text-logo { font-size: 32px !important; font-weight: 800 !important; text-transform: uppercase !important; text-align: center !important; margin: 25px 0 5px 0 !important; color: white !important; }
+.yellow-text { color: #fbbf24 !important; }
+header p { color: #94a3b8; margin-bottom: 10px; font-size: 16px; text-align: center; }
+
+/* Popravka bedževa (da ne budu spojeni) */
+.badges { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; margin: 20px auto; max-width: 95%; }
+.badge { background: #1e293b !important; color: #f8fafc !important; padding: 8px 14px; border-radius: 20px; font-size: 14px; font-weight: 600; display: inline-block; }
+
+/* Popravka dugmadi (da ponovo budu plave kockice sa belim tekstom) */
+.dugmad-kontejner { text-align: center; margin: 25px 0; }
+.btn { display: inline-block; padding: 14px 24px; background: #2563eb !important; color: white !important; text-decoration: none !important; border-radius: 8px; font-weight: bold; margin: 8px; font-size: 16px; }
+
+/* Vraćanje kartica (da tekst dobije lepe tamno-sive kutije) */
+.card, .service-box, .service-card { background: #1e293b !important; color: white !important; padding: 20px; border-radius: 12px; margin: 20px auto; max-width: 90%; text-align: center; }
+h2, h3 { color: #38bdf8 !important; margin-top: 20px; margin-bottom: 10px; font-size: 22px; }
 </style>
+
 
 <body>
 
