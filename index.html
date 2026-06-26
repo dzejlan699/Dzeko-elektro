@@ -48,24 +48,30 @@ header p { color: #94a3b8; margin-bottom: 10px; font-size: 16px; text-align: cen
 .badges { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; margin: 20px auto; max-width: 95%; }
 .badge { background: #1e293b !important; color: #f8fafc !important; padding: 8px 14px; border-radius: 20px; font-size: 14px; font-weight: 600; display: inline-block; }
 
-/* Stilizacija za dugmad da budu profesionalnija */
-.button-link {
+/* Dizajn za moderna dugmad */
+.btn {
     display: inline-block;
     padding: 12px 25px;
     margin: 10px 5px;
-    text-decoration: none;
+    text-decoration: none !important;
     color: white !important;
-    background-color: transparent; /* Providna pozadina */
-    border: 2px solid #fbbf24; /* Zlatni okvir */
-    border-radius: 8px; /* Zaobljene ivice */
-    font-weight: bold;
-    transition: 0.3s;
+    background-color: transparent !important;
+    border: 2px solid #fbbf24 !important; /* Zlatni okvir */
+    border-radius: 8px !important; /* Zaobljene ivice */
+    font-weight: bold !important;
+    font-size: 16px !important;
+    transition: 0.3s !important;
 }
 
-/* Efekat kad pređeš mišem preko dugmeta */
-.button-link:hover {
-    background-color: #fbbf24;
+/* Efekat kada pređeš mišem preko dugmeta */
+.btn:hover {
+    background-color: #fbbf24 !important;
     color: #0f172a !important;
+}
+
+.dugmad-kontejner { 
+    text-align: center; 
+    margin: 25px 0; 
 }
 
 
